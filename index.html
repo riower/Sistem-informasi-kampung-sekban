@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kampung Sekban</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cycle.all.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#slideshow').cycle({
+                fx: 'fade',
+                speed: 'slow',
+                timeout: 5000,
+                pager: '#slider_nav',
+                pagerAnchorBuilder: function(idx, slide) {
+                    return '#slider_nav li:eq(' + (idx) + ') a';
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Kampung Sekban</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Berita.html">Berita</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Tentang.html">Tentang Kami</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Hubungi Kami</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="header_resize">
+        <div class="header">
+            <div class="clr"></div>
+        </div>
+    </div>
+    <div class="header_blog">
+        <div id="slider">
+            <!-- start slideshow -->
+            <div id="slideshow">
+                <div class="slider-item">
+                    <div class="text_item">
+                        <h2>Selamat Datang di Kampung Sekban</h2>
+                        <p>Kampung Sekban adalah sebuah kampung di Distrik Pariwari, Kabupaten Fakfak, Papua Barat. Kode posnya adalah 98013 dan kode wilayahnya adalah 92.03.10.2006.</p>
+                        <a href="#"><img src="images/more_information.gif" alt="Baca Selengkapnya" width="141" height="33" border="0" /></a>
+                    </div>
+                    <a href="#"><img src="sekban.jpg" alt="Gambar Kampung Sekban" width="511" height="323" border="0" /></a>
+                </div>
+                <div class="slider-item">
+                    <div class="text_item">
+                        <h2>Sejarah dan Budaya Sekban</h2>
+                        <p>Kampung Sekban memiliki sejarah dan budaya yang kaya, dengan berbagai tradisi yang masih dijaga hingga kini.</p>
+                        <a href="#"><img src="images/more_information.gif" alt="Baca Selengkapnya" width="141" height="33" border="0" /></a>
+                    </div>
+                    <a href="#"><img src="sekban2.jpg" alt="Gambar Kampung Sekban" width="511" height="323" border="0" /></a>
+                </div>
+                <div class="slider-item">
+                    <div class="text_item">
+                        <h2>Informasi tentang Kampung Sekban</h2>
+                        <p>Kampung Sekban adalah sebuah kampung di Distrik Pariwari, Kabupaten Fakfak, Papua Barat. Kode posnya adalah 98013 dan kode wilayahnya adalah 92.03.10.2006.</p>
+                        <a href="#"><img src="images/more_information.gif" alt="Baca Selengkapnya" width="141" height="33" border="0" /></a>
+                    </div>
+                    <a href="#"><img src="Kampung-KB-1.jpg" alt="Gambar Kampung Sekban" width="511" height="323" border="0" /></a>
+                </div>
+            </div>
+            <!-- end #slideshow -->
+            <div class="controls-center">
+                <div id="slider_controls">
+                    <h2></h2>
+                    <ul id="slider_nav">
+                        <li><a href="#"></a></li>
+                        <!-- Slide 1 -->
+                        <li><a href="#"></a></li>
+                        <!-- Slide 2 -->
+                        <li><a href="#"></a></li>
+                        <!-- Slide 3 -->
+                    </ul>
+                </div>
+            </div>
+            <div class="clr"></div>
+        </div>
+        <div class="clr"></div>
+    </div>
+    <div class="clr"></div>
+    <div class="search">
+        <form id="form1" name="form1" method="post" action="#">
+        </form>
+    </div>
+    <div class="clr"></div>
+    <div class="body_resize">
+        <div class="body_resize_top">
+            <div class="body_resize_bottom">
+                <div class="blog">
+                    <h2>Tentang Kampung Sekban</h2>
+                    <img src="sekban.jpg" alt="Tentang Kampung Sekban" width="274" height="116" />
+                    <p><strong>Kampung Sekban adalah sebuah kampung di Distrik Pariwari, Kabupaten Fakfak, Papua Barat.</strong><br />
+                    Kode posnya adalah 98013 dan kode wilayahnya adalah 92.03.10.2006. Kampung ini memiliki sejarah dan budaya yang kaya, dengan berbagai tradisi yang masih dijaga hingga kini.</p>
+                    <p><a href="#"><strong>Baca Selengkapnya »</strong></a></p>
+                </div>
+                <div class="blog">
+                    <h2>Berita Terbaru</h2>
+                    <img src="sekban2.jpg" alt="Berita Terbaru" width="274" height="116" />
+                    <p>Kontes Pemenang Model Terbaik diadakan di Kampung Sekban, Fakfak, Papua Barat. Acara ini menampilkan berbagai model dari seluruh Indonesia. <a href="#"><strong>Baca Selengkapnya »</strong></a></p>
+                </div>
+                <div class="blog">
+                    <h2>Acara dan Kegiatan</h2>
+                    <p>12 Des 2023 | <span>0 komentar</span><br />
+                    <strong>Festival Budaya Sekban</strong><br />
+                    Festival ini menampilkan berbagai tarian dan musik tradisional dari Kampung Sekban. <a href="#"><strong>Selengkapnya »</strong></a></p>
+                    <p>&nbsp;</p>
+                    <p>18 Des 2023 | <span>5 komentar</span><br />
+                    <strong>Pelatihan Kerajinan Tangan</strong><br />
+                    Pelatihan ini bertujuan untuk melestarikan kerajinan tangan tradisional Kampung Sekban. <a href="#"><strong>Selengkapnya »</strong></a></p>
+                    <p>&nbsp;</p>
+                    <p>4 Jan 2024 | <span>2 komentar</span><br />
+                    <strong>Perayaan Tahun Baru</strong><br />
+                    Perayaan ini diadakan untuk menyambut tahun baru dengan berbagai kegiatan menarik. <a href="#"><strong>Selengkapnya »</strong></a></p>
+                </div>
+                <div class="clr"></div>
+            </div>
+        </div>
+    </div>
+    <div class="clr"></div>
+    <div class="footer bg-success text-white text-center py-4">
+        <div class="container">
+            <div class="social-icons mb-4">
+                <a href="#" class="text-white me-3"><i class="bi bi-facebook" style="font-size: 1.5rem;"></i></a>
+                <a href="#" class="text-white me-3"><i class="bi bi-instagram" style="font-size: 1.5rem;"></i></a>
+                <a href="#" class="text-white me-3"><i class="bi bi-tiktok" style="font-size: 1.5rem;"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-threads" style="font-size: 1.5rem;"></i></a>
+            </div>
+            <div class="footer-bottom">
+                <a href="#" class="text-white me-3">FAQ</a>
+                <a href="#" class="text-white">Account</a>
+            </div>
+            <div class="footer-legal mb-2">
+                <a href="#" class="text-white me-3">Terms</a>
+                <a href="#" class="text-white me-3">Privacy</a>
+                <a href="#" class="text-white me-3">Refunds</a>
+                <a href="#" class="text-white me-3">Site by Manufacturer</a>
+            </div>
+            <p class="mb-0">© Copyright 2023 Kampung Sekban. Semua hak dilindungi.</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

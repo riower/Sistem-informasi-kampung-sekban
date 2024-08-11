@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kampung Sekban | Hubungi Kami</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Kampung Sekban</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Berita.html">Berita</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Tentang.html">Tentang Kami</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contact.html">Hubungi Kami</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Hubungi Kami</h2>
+                <form action="#" method="post" id="contactform">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nama Anda</label>
+                        <input type="text" class="form-control" id="name" name="name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Anda</label>
+                        <input type="email" class="form-control" id="email" name="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Subjek</label>
+                        <input type="text" class="form-control" id="subject" name="subject">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Pesan</label>
+                        <textarea class="form-control" id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h2>Lokasi Kami</h2>
+                <iframe src="https://maps.app.goo.gl/QMR2NexrcgNZFWMF9" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="footer bg-success text-white text-center py-4 mt-5">
+        <div class="container">
+            <div class="social-icons mb-4">
+                <a href="#" class="text-white me-3"><i class="bi bi-facebook" style="font-size: 1.5rem;"></i></a>
+                <a href="#" class="text-white me-3"><i class="bi bi-instagram" style="font-size: 1.5rem;"></i></a>
+                <a href="#" class="text-white me-3"><i class="bi bi-tiktok" style="font-size: 1.5rem;"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-threads" style="font-size: 1.5rem;"></i></a>
+            </div>
+            <div class="footer-bottom">
+                <a href="#" class="text-white me-3">FAQ</a>
+                <a href="#" class="text-white">Account</a>
+            </div>
+            <div class="footer-legal mb-2">
+                <a href="#" class="text-white me-3">Terms</a>
+                <a href="#" class="text-white me-3">Privacy</a>
+                <a href="#" class="text-white me-3">Refunds</a>
+                <a href="#" class="text-white me-3">Site by Manufacturer</a>
+            </div>
+            <p class="mb-0">© Copyright 2023 Kampung Sekban. Semua hak dilindungi.</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
